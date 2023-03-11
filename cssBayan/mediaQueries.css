@@ -6,6 +6,9 @@
     width: 6vw;
     height: 6vw;
   }
+  .main-title {
+    font-size: 6vw;
+  }
 }
 @media screen and (min-width: 820px) {
   .parent {
@@ -15,6 +18,9 @@
     width: 4.5vw;
     height: 4.5vw;
   }
+  .main-title {
+    font-size: 4.5vw;
+  }
 }
 @media screen and (min-width: 1920px) {
   .parent {
@@ -23,5 +29,8 @@
   .eye {
     width: 5vw;
     height: 5vw;
+  }
+  .main-title {
+    font-size: 5vw;
   }
 }

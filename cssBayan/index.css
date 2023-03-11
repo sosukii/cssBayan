@@ -21,6 +21,10 @@ body {
   align-items: center;
   height: 100vh;
 }
+.main-title {
+  padding: 1.5rem;
+  text-align: center;
+}
 .mem-header {
   display: flex;
   justify-content: space-between;
