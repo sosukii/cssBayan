@@ -21,7 +21,17 @@ body {
   align-items: center;
   height: 100vh;
 }
-
+.mem-header {
+  display: flex;
+  justify-content: space-between;
+}
+.eye {
+  background-image: url(./img/open.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+}
 .parent {
   padding: 0.9rem;
   width: 75vw;
