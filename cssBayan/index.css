@@ -68,7 +68,7 @@ body {
   width: 60%;
 }
 
-.parent:hover .eye {
+.content:hover .eye {
   opacity: 1;
   rotate: 20deg;
 }
