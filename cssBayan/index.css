@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background: -webkit-linear-gradient(90deg, #edbfcc, #e883a3, #c2506a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parent {
+  padding: 0.9rem;
+  width: 50vw;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+}
+.child {
+  align-self: center;
+  padding: 0.5rem;
+  transition: 0.9s;
+  visibility: hidden;
+  opacity: 0;
+  width: 0%;
+}
+
+.parent:hover {
+  cursor: pointer;
+}
+.parent:hover .child {
+  visibility: visible;
+  opacity: 1;
+  width: 60%;
+}
+.parent:focus .child {
+  visibility: visible;
+  opacity: 1;
+  width: 60%;
+}
+
+input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+input:focus + .parent .child {
+  visibility: visible;
+  opacity: 1;
+  width: 60%;
+}
