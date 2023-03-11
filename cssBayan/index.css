@@ -24,6 +24,7 @@ body {
 .mem-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .eye {
   background-image: url(./img/open.png);
