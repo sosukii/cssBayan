@@ -25,6 +25,9 @@ body {
   padding: 1.5rem;
   text-align: center;
 }
+.mem-title {
+  transition: 0.5s;
+}
 .mem-header {
   display: flex;
   justify-content: space-between;
@@ -43,7 +46,7 @@ body {
 .parent {
   padding: 0.9rem;
   width: 75vw;
-  background-color: #23d4f1e0;
+  background-color: #453210e0;
   color: honeydew;
   display: flex;
   flex-direction: column;
@@ -83,6 +86,10 @@ body {
   background-image: url(./img/open.png);
   rotate: -30deg;
   transform: scale(-1, 1);
+}
+
+.content:hover .mem-title {
+  color: indianred;
 }
 
 input {
