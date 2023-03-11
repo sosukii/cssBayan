@@ -2,14 +2,26 @@
   .parent {
     font-size: 6vw;
   }
+  .eye {
+    width: 6vw;
+    height: 6vw;
+  }
 }
 @media screen and (min-width: 820px) {
   .parent {
     font-size: 4.5vw;
   }
+  .eye {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
 }
 @media screen and (min-width: 1920px) {
   .parent {
     font-size: 5vw;
+  }
+  .eye {
+    width: 5vw;
+    height: 5vw;
   }
 }
