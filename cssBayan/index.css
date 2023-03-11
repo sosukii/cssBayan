@@ -11,6 +11,7 @@
 }
 body {
   background-image: url(./img/t3.jpg);
+  background-size: contain;
   font-family: "spongeBob";
 }
 .wrapper {
@@ -23,7 +24,7 @@ body {
 
 .parent {
   padding: 0.9rem;
-  width: 60vw;
+  width: 75vw;
   background-color: #23d4f1e0;
   color: honeydew;
   display: flex;
