@@ -18,6 +18,7 @@
   background-color: pink;
   display: flex;
   flex-direction: column;
+  transition: 0.4s;
 }
 .child {
   align-self: center;
