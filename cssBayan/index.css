@@ -34,7 +34,7 @@ body {
   align-items: center;
 }
 .eye {
-  background-image: url(./img/close.png);
+  background-image: url(./img/closeLashes.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 1.25rem;
