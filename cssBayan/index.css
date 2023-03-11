@@ -27,7 +27,7 @@ body {
   align-items: center;
 }
 .eye {
-  background-image: url(./img/open.png);
+  background-image: url(./img/close.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 1.25rem;
@@ -71,6 +71,14 @@ body {
 .content:hover .eye {
   opacity: 1;
   rotate: 20deg;
+}
+.parent:hover .eye {
+  background-image: url(./img/open.png);
+}
+.parent:focus .eye {
+  background-image: url(./img/open.png);
+  rotate: -30deg;
+  transform: scale(-1, 1);
 }
 
 input {
