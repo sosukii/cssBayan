@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "spongeBob";
+  src: url("spongeBob.woff2") format("woff2"),
+    url("spongeBob.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url(./img/t3.jpg);
+  background-size: contain;
+  font-family: "spongeBob";
+}
+.wrapper {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.main-title {
+  padding: 1.5rem;
+  text-align: center;
+}
+.mem-title {
+  transition: 0.5s;
+}
+.mem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eye {
+  background-image: url(./img/closeLashes.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+  opacity: 0;
+  rotate: -20deg;
+  transition: 0.4s;
+}
+.parent {
+  padding: 0.9rem;
+  width: 75vw;
+  background-color: #453210e0;
+  color: honeydew;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+.child {
+  align-self: center;
+  padding: 0.5rem;
+  transition: 0.9s;
+  visibility: hidden;
+  opacity: 0;
+  width: 0%;
+}
+
+.parent:hover {
+  cursor: pointer;
+}
+.parent:hover .child {
+  visibility: visible;
+  opacity: 1;
+  width: 60%;
+}
+.parent:focus .child {
+  visibility: visible;
+  opacity: 1;
+  width: 60%;
+}
+
+.content:hover .eye {
+  opacity: 1;
+  rotate: 20deg;
+}
+.parent:hover .eye {
+  background-image: url(./img/open.png);
+}
+.parent:focus .eye {
+  background-image: url(./img/open.png);
+  rotate: -30deg;
+  transform: scale(-1, 1);
+}
+
+.content:hover .mem-title {
+  color: #f99e9e;
+}
+
+input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+input:focus + .parent .child {
+  visibility: visible;
+  opacity: 1;
+  width: 60%;
+}
+input:focus + .parent .mem-header .eye {
+  background-image: url(./img/open.png);
+  rotate: -30deg;
+  transform: scale(-1, 1);
+}
