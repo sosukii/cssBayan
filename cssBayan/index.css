@@ -102,3 +102,8 @@ input:focus + .parent .child {
   opacity: 1;
   width: 60%;
 }
+input:focus + .parent .mem-header .eye {
+  background-image: url(./img/open.png);
+  rotate: -30deg;
+  transform: scale(-1, 1);
+}
