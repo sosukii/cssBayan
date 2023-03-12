@@ -34,3 +34,9 @@
     font-size: 5vw;
   }
 }
+
+@media (hover: none) {
+  .eye {
+    opacity: 1;
+  }
+}
